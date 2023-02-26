@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../NFTD-stablecoin"
+    },
+    {
+      "path": "../nft_marketplace-main"
+    },
+    {
+      "path": "../earthverse/earthverse-contracts-bsc"
+    }
+  ],
+  "settings": {
+    "slither.solcPath": "",
+    "slither.hiddenDetectors": []
+  }
+}
