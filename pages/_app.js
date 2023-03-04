@@ -21,7 +21,7 @@ export default function MyApp({ Component, pageProps }) {
       <SessionProvider session={pageProps.session} refetchInterval={0}>
         <Head>
           <title>E(AR)TH - NFT EARTH ON BNB CHAIN</title>
-          <meta charset="UTF-8" />
+          <meta charSet="UTF-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"

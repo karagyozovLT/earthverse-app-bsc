@@ -46,10 +46,11 @@ const OurTeam = () => {
             twitterLink="https://twitter.com/luxmigupta1799"
           />
           <TeamCard
-            fullName="Rehma"
+            fullName="Rehma Asghar"
             role="UI/UX, Graphic, Presentation"
-            srcImg="/images/team/.jpeg"
-            altImg="Rehma"
+            srcImg="/images/team/rehma-asghar.jpg"
+            altImg="Rehma Asghar"
+            linkedinLink="https://www.linkedin.com/in/rehma-a-299349102/"
           />
           <TeamCard
             fullName="Muhammad Inaamullah"
