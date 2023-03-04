@@ -10,6 +10,7 @@ import { useState } from "react";
 const Header = () => {
   const { data: session } = useSession();
   const [dropDownBtnClicked, setDropDownBtnClicked] = useState("");
+  const [isVisibleMobileMenu, setIsVisibleMobileMenu] = useState(false);
 
   const renderWalletAddress = () => {
     const firstSixSymbols = session.user.address.slice(0, 6);
@@ -21,6 +22,19 @@ const Header = () => {
   const handleClickBtn = (name) => {
     if (name === dropDownBtnClicked) setDropDownBtnClicked("");
     else setDropDownBtnClicked(name);
+  };
+
+  const handleFaBarsBtnClick = () => {
+    setIsVisibleMobileMenu(!isVisibleMobileMenu);
+  };
+
+  const handleOptionClick = () => {
+    if (isVisibleMobileMenu) setIsVisibleMobileMenu(false);
+  };
+
+  const handleSignOutSessionClick = () => {
+    handleOptionClick();
+    signOut();
   };
 
   return (
@@ -35,11 +49,18 @@ const Header = () => {
               height={48}
             />
           </Link>
-          <button className="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
+          <button
+            className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+            onClick={handleFaBarsBtnClick}
+          >
             <FaBars />
           </button>
         </div>
-        <nav className="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-start md:flex-row space-x-6 sm:items-start md:items-center lg:items-center xl:items-center 2xl:items-center">
+        <nav
+          className={`${
+            isVisibleMobileMenu ? "" : "hidden"
+          } flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-start md:flex-row md:space-x-6 sm:items-start md:items-center lg:items-center xl:items-center 2xl:items-center`}
+        >
           <DropDown
             btnName="Learn"
             clickedBtnName={dropDownBtnClicked}
@@ -49,6 +70,7 @@ const Header = () => {
               { href: "/geo-spoofing", name: "Geospoofing" },
               { href: "/our-team", name: "Team" },
             ]}
+            handleOptionClick={handleOptionClick}
             handleClickBtn={() => handleClickBtn("Learn")}
           />
           <DropDown
@@ -60,6 +82,7 @@ const Header = () => {
               { href: "/", name: "AR app" },
               { href: "/", name: "Create VR Model" },
             ]}
+            handleOptionClick={handleOptionClick}
             handleClickBtn={() => handleClickBtn("Participate")}
           />
           <DropDown
@@ -68,18 +91,23 @@ const Header = () => {
             options={[
               { href: "/virtual-estate-marketplace", name: "Virtual Estate" },
             ]}
+            handleOptionClick={handleOptionClick}
             handleClickBtn={() => handleClickBtn("Resources")}
           />
-          <Link
-            href="/"
-            className="whitespace-nowrap px-4 py-2 mt-2 text-md font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-          >
-            Mint BNFD
-          </Link>
+          <div className="py-4">
+            <Link
+              href="/"
+              onClick={handleOptionClick}
+              className="whitespace-nowrap px-4 py-2 mt-2 text-md font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              Mint BNFD
+            </Link>
+          </div>
+
           <div className="flex flex-row w-full sm:justify-start md:justify-end lg:justify-end xl:justify-end 2xl:justify-end">
             {session ? (
               <button
-                onClick={signOut}
+                onClick={handleSignOutSessionClick}
                 className="flex items-center justify-between gap-2 ml-3 whitespace-nowrap rounded-lg bg-indigo-800 text-md py-1 px-4 font-semibold text-white shadow-sm"
               >
                 <span className="px-2">{renderWalletAddress()}</span>
@@ -88,6 +116,7 @@ const Header = () => {
             ) : (
               <Link
                 href="/connect-wallet"
+                onClick={handleOptionClick}
                 className="flex items-center justify-between gap-2 ml-3 whitespace-nowrap rounded-lg bg-indigo-800 text-md py-1 px-4 font-semibold text-white shadow-sm"
               >
                 <FaWallet />
