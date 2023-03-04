@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="pt-10">
-      <div className="flex flex-row flex-wrap sm:flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap py-4 justify-between items-center shadow-inner px-[90px]">
+      <div className="flex flex-row flex-wrap sm:flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap py-4 justify-between items-center shadow-inner pl-8 md:px-[90px]">
         <div className="flex flex-row justify-center items-center">
           <Link href="/">
             <Image
@@ -20,20 +20,20 @@ const Footer = () => {
             E[AR]TH 2023 - ALL rights reserved
           </span>
         </div>
-        <ul className="flex flex-row flex-wrap list-none space-x-14">
-          <li className="cursor-pointer text-sm">
+        <ul className="flex flex-row flex-wrap list-none md:space-x-14 gap-y-1 gap-x-10">
+          <li className="pt-4 md:pt-0 cursor-pointer text-sm">
             <Link href="/">Home</Link>
           </li>
-          <li className="cursor-pointer text-sm">
+          <li className="pt-4 md:pt-0 cursor-pointer text-sm">
             <Link href="/about-earthverse">About E(AR)TH</Link>
           </li>
-          <li className="cursor-pointer text-sm">
+          <li className="pt-4 md:pt-0 cursor-pointer text-sm">
             <Link href="/about-bnfd">About BNFD</Link>
           </li>
-          <li className="cursor-pointer text-sm">
+          <li className="pt-4 md:pt-0 cursor-pointer text-sm">
             <Link href="/our-team">Our Team</Link>
           </li>
-          <li className="cursor-pointer text-sm">
+          <li className="pt-4 md:pt-0 cursor-pointer text-sm">
             <Link href="/faqs">FAQs</Link>
           </li>
         </ul>
