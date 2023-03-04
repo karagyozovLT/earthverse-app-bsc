@@ -58,7 +58,7 @@ const VirtualEstateMarketplace = () => {
     }
 
     setIsLoading(false);
-    setNftLandItems(nftLandItemsClone);
+    setNftLandItems(nftLandItemsClone.reverse());
   }, [signer]);
 
   const handleBuyNftLandClick = async (nftLandItem) => {
