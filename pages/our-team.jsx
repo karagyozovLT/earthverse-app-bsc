@@ -4,7 +4,7 @@ const OurTeam = () => {
   return (
     <div className="max-w-7xl mx-auto px-8">
       <h1 className="text-4xl font-black mt-28">Meet the Team</h1>
-      <div className="bg-gray-200 mt-5">
+      <div className="bg-[#eaf9ff] mt-5">
         <div className="use-card grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-2 p-6 sm:p-8 md:p-8 lg:p-16 xl:p-16 2xl:p-16">
           <TeamCard
             fullName="Georgi Karagyozov"
@@ -44,13 +44,6 @@ const OurTeam = () => {
             altImg="Luxmi Gupta"
             linkedinLink="https://www.linkedin.com/in/luxmi-gupta-058519191/"
             twitterLink="https://twitter.com/luxmigupta1799"
-          />
-          <TeamCard
-            fullName="Rehma Asghar"
-            role="UI/UX, Graphic, Presentation"
-            srcImg="/images/team/rehma-asghar.jpg"
-            altImg="Rehma Asghar"
-            linkedinLink="https://www.linkedin.com/in/rehma-a-299349102/"
           />
           <TeamCard
             fullName="Muhammad Inaamullah"
