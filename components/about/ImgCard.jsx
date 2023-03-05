@@ -10,7 +10,7 @@ const ImgCard = ({ isLarge, srcImg, altImg, title, description }) => {
       </div>
     </>
   ) : (
-    <div className="Usecard mt-3 bg-gray-200 rounded-xl p-6">
+    <div className="mt-3 bg-gray-200 rounded-xl p-6">
       <img src={srcImg} alt={altImg} />
       <h6 className="text-[#2596be] text-lg font-semibold mt-4 mb-1">
         {title}
