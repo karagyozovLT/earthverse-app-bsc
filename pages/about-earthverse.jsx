@@ -7,11 +7,8 @@ const AboutEarthverse = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-8">
-      <div className="flex flex-wrap gap-12 mt-20">
-        <div
-          style={{ backgroundColor: "#eaf9ff" }}
-          className="flex flex-row justify-center rounded-3xl w-full sm:w-full md:w-6/12 lg:w-6/12 xl:w-6/12 2xl:w-6/12"
-        >
+      <div className="flex flex-wrap gap-12 mt-32">
+        <div className="bg-[#eaf9ff] flex flex-row justify-center rounded-3xl w-full sm:w-full md:w-6/12 lg:w-6/12 xl:w-6/12 2xl:w-6/12">
           <img
             className="w-80 h-80"
             src="./images/about/wireframe-globe.png"
@@ -80,7 +77,7 @@ const AboutEarthverse = () => {
         </div>
       </div>
 
-      <div className="mt-10 bg-gray-200 grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:p-16 lg:p-16 xl:p-16 2xl:p-16 p-8 sm:gap-20 md:gap-30 lg:gap-60">
+      <div className="bg-[#eaf9ff] mt-10 grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:p-16 lg:p-16 xl:p-16 2xl:p-16 p-8 sm:gap-20 md:gap-30 lg:gap-60">
         <ImgCard
           isLarge
           srcImg="./images/about/mobile-proof-of-location.png"
@@ -93,7 +90,7 @@ const AboutEarthverse = () => {
         />
       </div>
 
-      <div className="bg-gray-100 grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:p-16 lg:p-16 xl:p-16 2xl:p-16 p-8 sm:gap-20 md:gap-30 lg:gap-60">
+      <div className="bg-[#d8e9f0] grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:p-16 lg:p-16 xl:p-16 2xl:p-16 p-8 sm:gap-20 md:gap-30 lg:gap-60">
         <ImgCard
           isLarge
           srcImg="./images/about/mobile-move-to-acquire.png"
@@ -108,7 +105,7 @@ const AboutEarthverse = () => {
         />
       </div>
 
-      <div className="bg-gray-200 grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:p-16 lg:p-16 xl:p-16 2xl:p-16 p-8 xs:gap-20 sm:gap-20 md:gap-30 lg:gap-60">
+      <div className="bg-[#eaf9ff] grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:p-16 lg:p-16 xl:p-16 2xl:p-16 p-8 xs:gap-20 sm:gap-20 md:gap-30 lg:gap-60">
         <ImgCard
           isLarge
           srcImg="./images/about/mobile-build-to-earn.png"

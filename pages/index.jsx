@@ -33,7 +33,7 @@ export default function Home() {
             description="Proof of location in the real world allows you to acquire virtual
             world assets, which can be explored and built upon in the E[AR]TH
             game."
-            href="/"
+            href="/play-game"
             textBtn="Play E[AR]TH"
           />
 
@@ -44,7 +44,7 @@ export default function Home() {
             description="Initial land ownership is based on the input users are willing to
             invest, physically by exploring locations in the real world to
             acquire assets and digitally."
-            href="/"
+            href="/claim-free-land"
             textBtn="Claim Free Land"
           />
 
@@ -55,12 +55,12 @@ export default function Home() {
             description="The decentralized platform gives users increased accessibility of
             fair opportunities to earn, build, trade, and play with virtual
             world assets."
-            href="/"
+            href="/create-vr-model"
             textBtn="Create AR/VR World"
           />
         </div>
 
-        <div className="bg-gray-200 grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:p-16 lg:p-16 xl:p-16 2xl:p-16 p-8 sm:gap-20 md:gap-30 lg:gap-60 mt-16">
+        <div className="bg-[#eaf9ff] grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:p-16 lg:p-16 xl:p-16 2xl:p-16 p-8 sm:gap-20 md:gap-30 lg:gap-60 mt-16">
           <div className="my-auto">
             <h2 className="text-3xl mb-5 font-medium">Discover E[AR]th</h2>
             {renderCommonParagraph(

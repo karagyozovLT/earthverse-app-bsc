@@ -20,7 +20,7 @@ const Footer = () => {
             E[AR]TH 2023 - ALL rights reserved
           </span>
         </div>
-        <ul className="flex flex-row flex-wrap list-none md:space-x-14 gap-y-1 gap-x-10">
+        <ul className="flex flex-row flex-wrap list-none md:space-x-14 md:gap-x-0 gap-y-1 gap-x-10">
           <li className="pt-4 md:pt-0 cursor-pointer text-sm">
             <Link href="/">Home</Link>
           </li>
@@ -32,9 +32,6 @@ const Footer = () => {
           </li>
           <li className="pt-4 md:pt-0 cursor-pointer text-sm">
             <Link href="/our-team">Our Team</Link>
-          </li>
-          <li className="pt-4 md:pt-0 cursor-pointer text-sm">
-            <Link href="/faqs">FAQs</Link>
           </li>
         </ul>
       </div>

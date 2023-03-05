@@ -104,7 +104,7 @@ const VirtualEstateMarketplace = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-8 mt-24">
-      <h1 className="text-4xl font-black mt-10">Virtual Estate Marketplace</h1>
+      <h1 className="text-4xl font-black mt-28">Virtual Estate Marketplace</h1>
       <div className="bg-gray-200 mt-8">
         <img src="./images/virtual-estate.jpeg" alt="Virtual Estate" />
       </div>
