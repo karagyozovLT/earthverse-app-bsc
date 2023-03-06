@@ -40,7 +40,7 @@ const Header = () => {
 
   return (
     <div className="z-[9999] w-full dark-mode:text-gray-200 dark-mode:bg-gray-800 py-2 fixed top-0 bg-white shadow-lg">
-      <div className="flex md:flex-row flex-col flex-wrap md:flex-nowrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap px-4 justify-between md:items-center md:pl-8 md:px-[90px] md:ml-14">
+      <div className="flex xl:flex-row flex-col flex-wrap xl:flex-nowrap lg:flex-nowrap xl:flex-nowrap 2xl:flex-nowrap px-4 justify-between xl:items-center xl:pl-8 xl:px-[90px] xl:ml-14">
         <div className="flex flex-row items-center justify-between">
           <div className="flex items-center mr-[100px]">
             <Link href="/">
@@ -56,7 +56,7 @@ const Header = () => {
           </div>
 
           <button
-            className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+            className="xl:hidden rounded-lg focus:outline-none focus:shadow-outline"
             onClick={handleFaBarsBtnClick}
           >
             <FaBars />
@@ -65,7 +65,7 @@ const Header = () => {
         <nav
           className={`${
             isVisibleMobileMenu ? "" : "hidden"
-          } md:ml-20 flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-start md:flex-row md:space-x-6 sm:items-start md:items-center lg:items-center xl:items-center 2xl:items-center`}
+          } xl:ml-20 flex-col flex-grow pb-4 xl:pb-0 xl:flex xl:justify-start xl:flex-row xl:space-x-6 sm:items-start xl:items-center lg:items-center xl:items-center 2xl:items-center`}
         >
           <DropDown
             btnName="Learn"
@@ -104,17 +104,17 @@ const Header = () => {
             <Link
               href="/mint-bnfd"
               onClick={handleOptionClick}
-              className="whitespace-nowrap px-4 py-2 mt-2 text-md font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              className="whitespace-nowrap px-4 py-2 mt-2 text-md font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 xl:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             >
               Mint BNFD
             </Link>
           </div>
 
-          <div className="flex flex-row w-full sm:justify-start md:justify-end lg:justify-end xl:justify-end 2xl:justify-end">
+          <div className="flex flex-row w-full sm:justify-start xl:justify-end">
             {session ? (
               <button
                 onClick={handleSignOutSessionClick}
-                className="flex items-center justify-between gap-2 md:ml-2 whitespace-nowrap rounded-lg bg-indigo-800 text-md py-1 px-4 font-semibold text-white shadow-sm"
+                className="flex items-center justify-between gap-2 xl:ml-2 whitespace-nowrap rounded-lg bg-indigo-800 text-md py-1 px-4 font-semibold text-white shadow-sm"
               >
                 <span className="px-2">{renderWalletAddress()}</span>
                 <span className="px-2">Sign Out</span>
@@ -123,7 +123,7 @@ const Header = () => {
               <Link
                 href="/connect-wallet"
                 onClick={handleOptionClick}
-                className="flex items-center justify-between gap-2 md:ml-2 ml-3 whitespace-nowrap rounded-lg bg-indigo-800 text-md py-1 px-4 font-semibold text-white shadow-sm"
+                className="flex items-center justify-between gap-2 xl:ml-2 ml-3 whitespace-nowrap rounded-lg bg-indigo-800 text-md py-1 px-4 font-semibold text-white shadow-sm"
               >
                 <FaWallet />
                 Connect
