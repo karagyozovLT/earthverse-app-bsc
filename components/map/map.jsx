@@ -130,7 +130,7 @@ const Map = () => {
   if (!hasAccessToLocation || !initialCoords) return <Loading />;
 
   return (
-    <div style={{ position: "relative" }}>
+    <div className="relative">
       <MapContainer
         center={initialCoords}
         zoom={19}

@@ -321,8 +321,7 @@ function CameraPopup({ setIsOpened, chosenSquares, setHasAccessToLocation }) {
                       <>
                         <label
                           htmlFor="upload-photo"
-                          style={{ cursor: "pointer" }}
-                          className=" group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+                          className="cursor-pointer group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
                         >
                           <span className="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4">
                             <UploadIcon />
