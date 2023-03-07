@@ -1,7 +1,6 @@
 import "leaflet/dist/leaflet.css";
 
 import HomeCard from "../components/HomeCard";
-import Image from "next/image";
 import React from "react";
 
 export default function Home() {
@@ -71,7 +70,11 @@ export default function Home() {
             )}
           </div>
           <div className="mx-auto">
-            <img src="./images/home/dicover-earth.png" alt="" width="auto" />
+            <img
+              src="./images/home/dicover-earth.png"
+              alt="Dicover Earth"
+              width="auto"
+            />
           </div>
         </div>
       </div>

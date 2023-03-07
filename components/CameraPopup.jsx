@@ -143,7 +143,7 @@ function CameraPopup({ setIsOpened, chosenSquares, setHasAccessToLocation }) {
       await nftAugmentedReality.safeMintNFT(nftAugmentedRealityMetadataURL)
     ).wait();
 
-    // //Mint NFTLand
+    //Mint NFTLand
     const tx = await nftLandContract.safeMintNFT(nftLandMetadataURL);
     const rc = await tx.wait();
     const nftLandIdHash = rc.logs[0].topics[3];

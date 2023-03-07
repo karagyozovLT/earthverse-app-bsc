@@ -46,7 +46,7 @@ const Header = () => {
             <Link href="/">
               <Image
                 src="/images/logo.png"
-                alt="E(AR)TH - NFT EARTH ON ETHEREUM"
+                alt="E(AR)TH - NFT EARTH ON BNB CHAIN"
                 width={110}
                 height={50}
               />

@@ -10,7 +10,7 @@ const Footer = () => {
             <Image
               className="inline-block"
               src="/images/logo.png"
-              alt="E(AR)TH - NFT EARTH ON ETHEREUM"
+              alt="E(AR)TH - NFT EARTH ON BNB CHAIN"
               width={70}
               height={10}
             />
