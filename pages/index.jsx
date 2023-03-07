@@ -66,7 +66,7 @@ export default function Home() {
               "E[AR]th, a virtual world that is a replica of our Planet Earth, is a world-building VR and AR platform based on democratization and powered by EVM compatible blockchains."
             )}
             {renderCommonParagraph(
-              " With the ability to create both user-generated and business-generated content, E[AR]th caters to different user needs all while providing reliability enabled by the use of a yield bearing stablecoin backed by virtual world assets and staked ETH."
+              " With the ability to create both user-generated and business-generated content, E[AR]th caters to different user needs all while providing reliability enabled by the use of a yield bearing stablecoin backed by virtual world assets and staked BNB."
             )}
           </div>
           <div className="mx-auto">
